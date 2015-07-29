@@ -56,8 +56,7 @@ gem install rails -v 4.2.1
 
 echo install PostgreSQL
 sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo
-apt-key add -
+wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 install postgresql-common
 install postgresql-9.3 
@@ -81,6 +80,6 @@ sudo chmod 600 /etc/apt/sources.list.d/passenger.list
 sudo apt-get update
 
 # Install nginx and passenger
-sudo apt-get install nginx-extras passenger
+install nginx-extras passenger
 sudo service nginx start
 
